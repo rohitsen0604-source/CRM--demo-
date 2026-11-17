@@ -90,7 +90,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     if (normalizedRole === 'super_admin') return { authorized: true };
 
     // Role Dashboard Isolation
-    if (pathname === '/super-admin/dashboard' && normalizedRole !== 'super_admin') {
+    if (pathname === '/super-admin/dashboard') {
       return {
         authorized: false,
         reason: 'The Super Admin Dashboard requires Platform Owner credentials. Your active profile is ' + normalizedRole.replace('_', ' ').toUpperCase() + '.'

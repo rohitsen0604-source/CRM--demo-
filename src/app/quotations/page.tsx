@@ -782,9 +782,3 @@ export default function QuotationsPage() {
     </Suspense>
   );
 }
-}
-}
-}
-}
-}
-}
